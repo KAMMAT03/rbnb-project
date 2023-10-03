@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Poppins;
 }
 
 body {
@@ -22,7 +23,6 @@ body {
 .hero{
     display: flex;
     flex-direction: column;
-    font-family: Poppins;
     padding-inline: 36px;
 }
 
@@ -51,4 +51,42 @@ body {
     text-wrap:wrap;
     width: 320px;
     margin: 0;
+}
+
+.services{
+    padding: 30px;
+    font-size: 12px;
+}
+
+.swimmer{
+    width: 173px;
+    height: 235px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.star{
+    margin-right: 2px;
+}
+
+.rating-det{
+    margin-inline: 2px;
+    color: #918E9B;
+}
+
+.service-info{
+    margin: 0;
+}
+
+.service-det{
+    margin-top:4px;
+}
+
+.price{
+    font-weight: 600;
+}
+
+.rating-div{
+    display: flex;
+    align-items: center;
 }
