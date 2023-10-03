@@ -18,3 +18,37 @@ body {
     width: 82px;
     flex-shrink: 0;
 }
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    padding-inline: 36px;
+}
+
+.photo-div{
+    padding-top: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid{
+    width: 390px;
+}
+
+.hero-title{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 110%;
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.hero-text{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 110%;
+    text-wrap:wrap;
+    width: 320px;
+    margin: 0;
+}
