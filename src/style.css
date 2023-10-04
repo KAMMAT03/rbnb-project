@@ -59,6 +59,7 @@ body {
     flex-direction: column;
     width: 175px;
     flex: 0 0 auto;
+    position: relative;
 }
 
 .card-image{
@@ -104,4 +105,14 @@ body {
     gap: 20px;
     padding-inline: 30px;
     padding-block: 10px;
+}
+
+.card-badge{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    background-color: white;
+    padding: 3px 6px;
+    border-radius: 6px;
+    font-weight: bold;
 }
