@@ -1,21 +1,19 @@
 import React from "react";
-import swimmer from "../images/swimmer.png";
-import star from "../images/star.png"
 
-export default function Card() {
+export default function Card(props) {
     return (
         <section className="services">
-            <img className="swimmer" src={swimmer} alt="" />
+            <img className="swimmer" src={props.img} alt="" />
             <div className="rating-div">
-                <img className="star" src={star} alt="" />
-                <span>5.0</span>
-                <span className="rating-det">(6)</span>
+                <img className="star" src="star.png" alt="" />
+                <span>{props.rating}</span>
+                <span className="rating-det">({props.reviewCount})</span>
                 <span className="rating-det">•</span>
-                <span className="rating-det">USA</span>
+                <span className="rating-det">{props.country}</span>
             </div>
-            <p className="service-info">Life lessons with Katie Zaferes</p>
+            <p className="service-info">{props.title}</p>
             <p className="service-det">
-                <span className="price">From $136 </span>/ person
+                <span className="price">From ${props.price} </span>/ person
             </p>
         </section>
     )
