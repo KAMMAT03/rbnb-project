@@ -96,6 +96,7 @@ body {
 .card-stats{
     display: flex;
     align-items: center;
+    padding-block: 5px;
 }
 
 .cards{
