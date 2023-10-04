@@ -2,17 +2,17 @@ import React from "react";
 
 export default function Card(props) {
     return (
-        <section className="services">
-            <img className="swimmer" src={props.img} alt="" />
-            <div className="rating-div">
-                <img className="star" src="star.png" alt="" />
+        <section className="card">
+            <img className="card-image" src={props.img} alt="" />
+            <div className="card-stats">
+                <img className="card-star" src="star.png" alt="" />
                 <span>{props.rating}</span>
-                <span className="rating-det">({props.reviewCount})</span>
-                <span className="rating-det">•</span>
-                <span className="rating-det">{props.country}</span>
+                <span className="gray">({props.reviewCount})</span>
+                <span className="gray">•</span>
+                <span className="gray">{props.location}</span>
             </div>
-            <p className="service-info">{props.title}</p>
-            <p className="service-det">
+            <p className="card-title">{props.title}</p>
+            <p className="card-price">
                 <span className="price">From ${props.price} </span>/ person
             </p>
         </section>

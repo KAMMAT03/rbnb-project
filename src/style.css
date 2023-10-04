@@ -53,40 +53,55 @@ body {
     margin: 0;
 }
 
-.services{
-    padding: 30px;
+.card{
     font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 175px;
+    flex: 0 0 auto;
 }
 
-.swimmer{
+.card-image{
     width: 173px;
     height: 235px;
     object-fit: cover;
     border-radius: 9px;
 }
 
-.star{
+.card-star{
     margin-right: 2px;
 }
 
-.rating-det{
+.gray{
     margin-inline: 2px;
     color: #918E9B;
 }
 
-.service-info{
+.card-title{
     margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.service-det{
-    margin-top:4px;
+.card-price{
+    margin-top:auto;
 }
 
 .price{
     font-weight: 600;
+    margin-top: auto;
 }
 
-.rating-div{
+.card-stats{
     display: flex;
     align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding-inline: 30px;
+    padding-block: 10px;
 }
